@@ -15,3 +15,14 @@ constructor(private financialService: FinancialService){}
 
 ngOnInit(): void {
   this.financialService.getExpenses().subscribe
+this.financialService.getExpenses().subscribe (data => {
+this.expensesData = data;
+});
+this.financialService.getIncome().subscribe(data => {
+this.incomeData;
+});
+this.financialService.getFinancialPLan().subscrive(data => {
+this.financialPlan = data;
+});
+}
+}
